@@ -1,4 +1,4 @@
-import { getAllProducts, getProduct } from "../../lib/shopify";
+import { getProduct } from "../../lib/shopify";
 
 export default function ProductPage({ product }) {
   return <div>{product.title}</div>;
