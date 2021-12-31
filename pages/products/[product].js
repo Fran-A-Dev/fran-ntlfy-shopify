@@ -1,17 +1,17 @@
-import { getProduct } from "../../lib/shopify";
+import { getAllProducts, getProduct } from "../../lib/shopify";
 
 export default function ProductPage({ product }) {
   return <div>{product.title}</div>;
 }
 
 export async function getStaticPaths() {
-  const products = await getProduct();
+  const products = await getAllProducts();
 
   const paths = products.map((item) => {
-    const handle = String(item.node.handle);
+    const product = String(item.node.handle);
 
     return {
-      params: { handle },
+      params: { product },
     };
   });
   return {
