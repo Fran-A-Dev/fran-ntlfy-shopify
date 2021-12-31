@@ -1,7 +1,6 @@
-import { getAllProducts } from "../lib/shopify";
-import ProductCard from "../components/ProductCard";
-import ProductList from "../components/ProductList";
-export default function Home({ products }) {
+import ProductCard from "./ProductCard";
+
+const ProductList = ({ products }) => {
   return (
     <div className="bg-white">
       <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -14,12 +13,6 @@ export default function Home({ products }) {
       </div>
     </div>
   );
-}
+};
 
-export async function getStaticProps() {
-  const products = await getAllProducts();
-
-  return {
-    props: { products }, // will be passed to the page component as props
-  };
-}
+export default ProductList;
