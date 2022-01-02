@@ -23,7 +23,7 @@ export default function Home({ products }) {
         <meta property="og:url" content="https://www.buildnextshop.com" />
         <meta
           property="og:image"
-          content="https://www.buildnextshop.com/share.png"
+          content="https://www.buildnextshop.com/nextjsshopify.png"
         />
         <meta
           property="og:description"
