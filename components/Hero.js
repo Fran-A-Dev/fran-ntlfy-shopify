@@ -15,12 +15,12 @@ export default function Hero() {
         Build the eCommerce JAMstack
       </h2>
       <div className="mt-5 max-w-md mx-auto flex justify-center items-center md:mt-8">
-        <Link href="#">
+        <Link href="https://www.netlify.com/">
           <a className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium py-3 border-transparent rounded-md text-white bg-gray-900 hover:bg-gray-800">
             Netlify
           </a>
         </Link>
-        <Link href="#">
+        <Link href="https://jamstack.org/">
           <a className="inline-flex items-center font-semibold text-gray-900 hover:text-gray-800">
             JAMstack
           </a>

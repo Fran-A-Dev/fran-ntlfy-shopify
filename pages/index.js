@@ -14,11 +14,8 @@ export default function Home({ products }) {
           http-equiv="Content-Type"
           content="text/html; charset=ISO-8859-1"
         />
-        <meta
-          name="description"
-          content="Modern eCommerce Development Course focusing on Shopify, Next.js, TailwindCSS, GraphQL. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps and more."
-        />
-        <meta property="og:title" content="Modern eCommerce Course" />
+        <meta name="description" content="Fran's Netlify + Shopify Demo" />
+        <meta property="og:title" content="JAMstack eCommerce " />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.buildnextshop.com" />
         <meta
@@ -27,10 +24,10 @@ export default function Home({ products }) {
         />
         <meta
           property="og:description"
-          content="Modern eCommerce Development Course focusing on Shopify, Next.js, TailwindCSS, GraphQL. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps and more."
+          content="This is my demo app of the a Shopify Headless site on Next deployed on Netlify"
         />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Modern eCommerce Course" />
+        <meta property="og:site_name" content="JAMstack" />
       </Head>
       <Hero />
       <ProductList products={products} />
