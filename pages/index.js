@@ -1,6 +1,6 @@
 import { getProductsInCollection } from "../lib/shopify";
 import ProductList from "../components/ProductList";
-import ProductCard from "../components/ProductCard";
+
 import Hero from "../components/Hero";
 
 export default function Home({ products }) {
