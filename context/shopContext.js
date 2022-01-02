@@ -1,4 +1,3 @@
-import React from "react";
 import { createContext, useState, useEffect } from "react";
 import { createCheckout, updateCheckout } from "../lib/shopify";
 
@@ -14,28 +13,29 @@ export default function ShopProvider({ children }) {
     if (cart.length === 0) {
       setCart([newItem]);
 
-      const checkOut = await createCheckout(
+      console.log(newItem);
+
+      const checkout = await createCheckout(
         newItem.id,
         newItem.variantQuantity
       );
 
-      setCheckoutId(checkOut.id);
-      setCheckoutUrl(checkOut.webUrl);
+      setCheckoutId(checkout.id);
+      setCheckoutUrl(checkout.webUrl);
 
-      localStorage.setItem("checkout_id", JSON.stringify([newItem, checkOut]));
+      localStorage.setItem("checkout_id", JSON.stringify([newItem, checkout]));
     } else {
-      let newCart = [];
-      let added = false;
+      let newCart = [...cart];
 
       cart.map((item) => {
         if (item.id === newItem.id) {
           item.variantQuantity++;
           newCart = [...cart];
         } else {
-          newCart = [...cart];
-          added = true;
+          newCart = [...cart, newItem];
         }
       });
+
       setCart(newCart);
       const newCheckout = await updateCheckout(checkoutId, newCart);
       localStorage.setItem(
@@ -59,5 +59,7 @@ export default function ShopProvider({ children }) {
     </CartContext.Provider>
   );
 }
+
 const ShopConsumer = CartContext.Consumer;
+
 export { ShopConsumer, CartContext };
