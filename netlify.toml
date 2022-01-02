@@ -1,0 +1,8 @@
+[[plugins]]
+package = "@algolia/netlify-plugin-crawler"
+  [plugins.inputs]
+  branches = ['main','feat/feat-algoliasearch']
+  disabled = true
+ 
+  customDomain = "example.com"
+  renderJavaScript = true

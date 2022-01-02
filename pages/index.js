@@ -32,6 +32,7 @@ export default function Home({ products }) {
         <meta property="og:site_name" content="Modern eCommerce Course" />
       </Head>
       <Hero />
+
       <ProductList products={products} />
     </div>
   );
