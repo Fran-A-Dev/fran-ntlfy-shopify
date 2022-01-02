@@ -23,7 +23,9 @@ export default function ProductOptions({
                 name={`option-${name}`}
                 value={value}
                 checked={checked}
-                onChange={() => setOptions(name, value)}
+                onChange={() => {
+                  setOptions(name, value);
+                }}
               />
               <div
                 className={`p-2 mt-3 text-lg rounded-full block cursor-pointer mr-3 ${
