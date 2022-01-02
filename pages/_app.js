@@ -3,8 +3,6 @@ import "tailwindcss/tailwind.css";
 import Layout from "../components/Layout";
 import ShopProvider from "../context/shopContext";
 import { useRouter } from "next/router";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
