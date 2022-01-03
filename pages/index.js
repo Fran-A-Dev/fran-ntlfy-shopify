@@ -1,7 +1,6 @@
 import { getProductsInCollection } from "../lib/shopify";
 import ProductList from "../components/ProductList";
 import Head from "next/head";
-
 import Hero from "../components/Hero";
 
 export default function Home({ products }) {
@@ -30,6 +29,7 @@ export default function Home({ products }) {
         <meta property="og:site_name" content="JAMstack" />
       </Head>
       <Hero />
+
       <ProductList products={products} />
     </div>
   );
