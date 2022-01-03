@@ -7,7 +7,8 @@ export default function Layout({ children }) {
       <Nav />
 
       <main>{children}</main>
-      <footer>Footer</footer>
+      <footer>Footer Hello World</footer>
+      <p>Howdy folks</p>
     </div>
   );
 }
