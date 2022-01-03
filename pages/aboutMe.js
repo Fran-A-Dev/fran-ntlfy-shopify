@@ -16,8 +16,9 @@ export default function page() {
         I am Fran the Dev, I am a newbie JAMstack coder who enjoys building demo
         sites for use cases on all channels of industry. In my spare time, I
         also like to rock climb. Which is why I added climbing gear to this
-        shop! Help me revolutionzie the way the web works!
+        shop! Help me revolutionzie the way the web works! Fran the man
       </h2>
+      <p>Hello World</p>
       <div className="mt-5 max-w-md mx-auto flex justify-center items-center md:mt-8">
         <Link href="https://www.netlify.com/">
           <a className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium py-3 border-transparent rounded-md text-white bg-gray-900 hover:bg-gray-800">
