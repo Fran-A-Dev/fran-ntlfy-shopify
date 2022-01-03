@@ -37,9 +37,8 @@ export default function Home({ products }) {
 
 export async function getStaticProps() {
   const products = await getProductsInCollection();
+
   return {
-    props: {
-      products,
-    },
+    props: { products }, // will be passed to the page component as props
   };
 }
