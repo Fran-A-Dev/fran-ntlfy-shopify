@@ -17,7 +17,7 @@ export default function Home({ products }) {
         <meta name="description" content="Fran's Netlify + Shopify Demo" />
         <meta property="og:title" content="JAMstack eCommerce " />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.buildnextshop.com" />
+        <meta property="og:url" content="https://www.netlify.com/" />
         <meta
           property="og:image"
           content="https://www.buildnextshop.com/nextjsshopify.png"
@@ -37,8 +37,10 @@ export default function Home({ products }) {
 
 export async function getStaticProps() {
   const products = await getProductsInCollection();
-
   return {
-    props: { products }, // will be passed to the page component as props
+    props: {
+      products,
+    },
+    revalidate: 10,
   };
 }
