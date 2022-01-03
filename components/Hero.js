@@ -20,9 +20,9 @@ export default function Hero() {
             Netlify
           </a>
         </Link>
-        <Link href="https://jamstack.org/">
+        <Link href="/aboutMe">
           <a className="inline-flex items-center font-semibold text-gray-900 hover:text-gray-800">
-            JAMstack
+            About Me
           </a>
         </Link>
       </div>
