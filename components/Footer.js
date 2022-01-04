@@ -19,7 +19,7 @@ export default function Footer() {
           ))}
         </nav>
         <p className="mt-8 text-center text-gray-400">
-          &copy; 2021 Learn Shopify Next.js Course, All right reserved.
+          &copy; JAMstack E-commerece + Netlify 2022.
         </p>
       </div>
     </footer>
