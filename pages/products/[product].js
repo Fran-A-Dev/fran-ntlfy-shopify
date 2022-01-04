@@ -21,7 +21,7 @@ export async function getStaticPaths() {
   });
   return {
     paths,
-    fallback: false,
+    fallback: false, //change to "blocking" to initaite on demand builders"
   };
 }
 
@@ -30,7 +30,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      product,
+      product, //add "revalidate" key here to initate ISR and add time in seconds to revalidate"
     },
   };
 }
