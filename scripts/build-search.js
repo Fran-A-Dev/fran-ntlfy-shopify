@@ -1,5 +1,3 @@
-import { getProduct } from "../lib/shopify";
-
 const dotenv = require("dotenv");
 const fetch = require("node-fetch");
 const algoliasearch = require("algoliasearch/lite");
