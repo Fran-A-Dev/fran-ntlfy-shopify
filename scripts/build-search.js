@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const fetch = require("node-fetch");
 const algoliasearch = require("algoliasearch/lite");
 
-async function callShopify(query) {
+async function callShopifyData(query) {
   try {
     const data = await fetch(`https://${domain}/api/2021-07/graphql.json`, {
       method: "POST",

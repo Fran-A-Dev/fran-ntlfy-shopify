@@ -2,6 +2,7 @@ import { getProductsInCollection } from "../lib/shopify";
 import ProductList from "../components/ProductList";
 import Head from "next/head";
 import Hero from "../components/Hero";
+import Search from "../components/Search/index";
 
 export default function Home({ products }) {
   return (
@@ -32,7 +33,7 @@ export default function Home({ products }) {
         <meta property="og:site_name" content="Modern eCommerce Course" />
       </Head>
       <Hero />
-
+      <Search />
       <ProductList products={products} />
     </div>
   );
