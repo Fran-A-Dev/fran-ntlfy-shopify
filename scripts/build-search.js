@@ -18,7 +18,7 @@ async function callShopifyData(query) {
   }
 }
 
-export async function getProductsInCollection() {
+async function getProductsInCollection() {
   const query = `
     {
       collectionByHandle(handle: "frontpage") {

@@ -5,9 +5,10 @@ function SearchBox({ refine }) {
     <form>
       <label htmlFor="algolia_search">Search Products</label>
       <input
-        id="algolia-search"
+        className="mt-1 block w-medium bg-cyan-300"
+        placeholder="Placeholder"
         type="search"
-        placeholder="Buy stuff..."
+        placeholder="I am a nerd"
         onChange={(e) => refine(e.currentTarget.value)}
       ></input>
     </form>

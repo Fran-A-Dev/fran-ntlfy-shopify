@@ -13,7 +13,7 @@ function Hits({ searchState, searchResults }) {
       {searchResults?.hits.length > 0 && validQuery && (
         <ol>
           {searchResults.hits.map((hit) => (
-            <li key={hit.product}>{hit.title}</li>
+            <li key={hit.objectID}>{hit.title}</li>
           ))}
         </ol>
       )}
