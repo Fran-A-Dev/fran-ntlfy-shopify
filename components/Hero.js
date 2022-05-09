@@ -8,19 +8,11 @@ export default function Hero() {
           Fran_The_Dev Next JS + Shopify Demo
         </p>
         <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-4xl sm:text-6xl md:text-7xl">
-<<<<<<< HEAD
           Headless E-Comm
         </p>
       </h1>
       <h2 className="mt-3 max-w-md mx-auto text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-x-3xl">
         Decoupled e-Comm
-=======
-          Jamstack E-Comm
-        </p>
-      </h1>
-      <h2 className="mt-3 max-w-md mx-auto text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-x-3xl">
-        Build the eCommerce Jamstack
->>>>>>> 425ac82d2bf27ba621718c1b16b141139facf3b3
       </h2>
       <div className="mt-5 max-w-md mx-auto flex justify-center items-center md:mt-8">
         <Link href="https://nextjs.org/">
