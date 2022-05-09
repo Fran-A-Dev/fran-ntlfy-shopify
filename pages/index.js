@@ -7,7 +7,7 @@ export default function Home({ products }) {
   return (
     <div className="text-3xl">
       <Head>
-        <title>JAMstack Ecomm</title>
+        <title>Headless Ecomm</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta
           http-equiv="Content-Type"

@@ -18,7 +18,7 @@ export default function Nav() {
         <Link href="/" passHref>
           <a className="cursor-pointer">
             <span className="text-lg pt-1 font-bold">
-              Fran_The_Dev&#39;s Next JS + Shopify + Netlify Demo
+              Fran_The_Dev&#39;s Next JS + Shopify Demo
             </span>
           </a>
         </Link>
